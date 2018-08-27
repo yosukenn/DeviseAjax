@@ -1,0 +1,8 @@
+<% @hellos.each do |hello| %>
+  <p><%= hello.greet %></p>
+<% end %>
+
+<%= form_with model: Hello.new do |f| %>
+<%= f.text_field :greet %>
+<%= f.submit %>
+<% end %>
