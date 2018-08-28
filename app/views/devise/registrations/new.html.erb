@@ -1,6 +1,6 @@
 <h2>Sign up</h2>
 
-<%= form_with(model: @resource, url: user_registration_path) do |f| %>
+<%= form_with(model: User.new, url: user_registration_path) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
